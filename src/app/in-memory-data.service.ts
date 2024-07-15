@@ -7,7 +7,7 @@ import { Hero } from './hero';
 })
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
-    const heroes = [
+  /*  const heroes = [
       { id: 12, name: 'Bart Simpson' },
       { id: 13, name: 'Lisa Simpson' },
       { id: 14, name: 'Homer Simpson' },
@@ -17,6 +17,19 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 18, name: 'Ned Flanders' },
       { id: 19, name: 'Apu' },
       { id: 20, name: 'Maggie, the Simpson Baby' }
+    ];
+    return {heroes};*/
+
+    const heroes = [
+      { id: 12, name: 'Room 100' },
+      { id: 13, name: 'Room 101' },
+      { id: 14, name: 'Room 102' },
+      { id: 15, name: 'Music study Hall 1' },
+      { id: 16, name: 'Study Hall 1' },
+      { id: 17, name: 'Study Hall 2' },
+      { id: 18, name: 'Washing room 1' },
+      { id: 19, name: 'Washing room 2' },
+      { id: 20, name: 'Gaming room' }
     ];
     return {heroes};
   }
