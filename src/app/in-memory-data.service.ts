@@ -20,7 +20,7 @@ export class InMemoryDataService implements InMemoryDbService {
     ];
     return {heroes};*/
 
-    const heroes = [
+    const rooms = [
       { id: 12, name: 'Room 100' },
       { id: 13, name: 'Room 101' },
       { id: 14, name: 'Room 102' },
@@ -31,7 +31,7 @@ export class InMemoryDataService implements InMemoryDbService {
       { id: 19, name: 'Washing room 2' },
       { id: 20, name: 'Gaming room' }
     ];
-    return {heroes};
+    return {rooms};
   }
 
   // Overrides the genId method to ensure that a hero always has an id.
