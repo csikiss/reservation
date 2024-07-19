@@ -24,7 +24,7 @@ export class RoomService {
 
   /** GET rooms from the server. Will 404 if id not found*/
   getRooms(): Observable<Room[]> {
-    return this.http.get<Room[]>(this.roomsUrl)
+    return this.http.get<Room[]>(this.roomsUrl+"/findall")
       .pipe(
         tap(_ => this.log('fetched rooms')),
         catchError(this.handleError<Room[]>('getRooms', []))
